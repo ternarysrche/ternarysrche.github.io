@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  height: 80px;
+  line-height: 80px;  
+  width: 80px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.video-mask{
+  /* padding: 20px; */
+  margin-top: 20px;
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+.video-mask-box{
+  /* padding: 20px; */
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.imageContainer {
+  padding: 20px;
+  height: 75%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  & > span {
+      position: unset !important;
+      height: 100%;
+  }
+
+  .image {
+      object-fit: contain;
+      width: auto !important;
+      position: relative !important;
+      height: 100% !important;
+      border-radius: 10px;
+  }
+}
+
+@layer utilities {
+  .focus-ring-small {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-black;
+  }
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black;
+  }
+}
+
+@layer base {
+  :root {
+   @apply bg-white dark:bg-black;
+  }
+ }
+
