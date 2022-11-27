@@ -61,7 +61,7 @@ export default function Art() {
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         
         <h2 className="sr-only">Art Pieces</h2>
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
         {/* <div class="grid gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"> */}
           {/* <a href="#" className="group"> */}
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
