@@ -76,7 +76,7 @@ export default function Art() {
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
           <Link href="/art/hillsideMecca.jpg" legacyBehavior> 
             <a>
-            <Image src={hillsideMecca} alt="Hillside Mecca" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+            <Image src={hillsideMecca} alt="Hillside Mecca" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
           </a></Link>
           </div>
             {/* <h3 className="mt-4 text-sm text-gray-700">Photography, Digital Application</h3>
@@ -85,7 +85,7 @@ export default function Art() {
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
           <Link href="/art/visionLost.jpg" legacyBehavior> 
             <a>
-            <Image src={visionLost} alt="Vision Lost" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+            <Image src={visionLost} alt="Vision Lost" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
           </a></Link>
           </div>
             {/* <h3 className="mt-4 text-sm text-gray-700">Binoculars Frozen in Ice</h3>
@@ -96,7 +96,7 @@ export default function Art() {
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
           <Link href="/art/parched.jpg" legacyBehavior> 
             <a>
-              <Image src={parched} alt="Parched" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+              <Image src={parched} alt="Parched" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
             </div>
             {/* <h3 className="mt-4 text-sm text-gray-700">Sunlight Deprived Grass</h3>
@@ -107,7 +107,7 @@ export default function Art() {
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
           <Link href="/art/whitewashed.jpg" legacyBehavior> 
             <a>
-              <Image src={whitewashed} alt="Whitewashed" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+              <Image src={whitewashed} alt="Whitewashed" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
             </div>
             {/* <h3 className="mt-4 text-sm text-gray-700">Acrylic Spray on Squash Racket</h3>
@@ -117,7 +117,7 @@ export default function Art() {
             <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/monteCristo.jpg" legacyBehavior> 
             <a>
-              <Image src={monteCristo} alt="Monte Cristo" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+              <Image src={monteCristo} alt="Monte Cristo" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
             </div>
             {/* <h3 className="mt-4 text-sm text-gray-700">Charcoal</h3>
@@ -126,7 +126,9 @@ export default function Art() {
           <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/sanitizedCommunication.mp4" legacyBehavior> 
             <a>
-            <video autoPlay muted loop style={{ width: '800px', height: 'auto'}} className = "video-mask-box">
+            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
+
+            {/* <video autoPlay muted loop style={{ width: '800px', height: 'auto'}} > */}
                   <source src="/images/sanitizedCommunication.mp4" />
                 </video>
             </a></Link>
@@ -135,14 +137,14 @@ export default function Art() {
             <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/objectsFromLife.jpg" legacyBehavior> 
             <a>
-            <Image src={objectsFromLife} alt="Object From Life" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+            <Image src={objectsFromLife} alt="Object From Life" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
             </div>
 
             <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/babies.mp4" legacyBehavior> 
             <a>
-            <video autoPlay muted loop style={{ width: '800px', height: 'auto'}} className = "video-mask-box">
+            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
                   <source src="/images/babies.mp4" />
                 </video>
             </a></Link>
@@ -151,7 +153,7 @@ export default function Art() {
             <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/kettle.jpg" legacyBehavior> 
             <a>
-            <Image src={kettle} alt="Kettle" placeholder='blur' className="h-full w-full object-cover object-center group-hover:opacity-75" />
+            <Image src={kettle} alt="Kettle" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
             </div>
 

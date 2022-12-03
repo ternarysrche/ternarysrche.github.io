@@ -81,7 +81,7 @@ export default function Art() {
                   </div>
                   <div className = "grid place-items-center">
                       <div>
-                  <p className="mt-1 text-4xl font-medium text-gray-900 text-center">Reminders</p>
+                  <p className="mt-1 text-4xl font-medium text-gray-900 text-center">Healthy Sitting Habits Program</p>
                   </div>
                   <a className = "btn" href = "/coding">←</a>
                   </div>

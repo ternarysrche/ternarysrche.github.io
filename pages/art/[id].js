@@ -79,18 +79,18 @@ export default function Art() {
         console.log(file)
         if (file.slice(-3) == 'jpg') {
           return (
-              <div className="isolate bg-white h-screen place-content-center">
-                  <div className="imageContainer">
-                      <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 image" />
-                  </div>
-                  <div className = "grid place-items-center">
-                      <div>
-                  <h3 className="mt-4 text-xl text-gray-700 text-center">{stuffs[id]["info"]}</h3>
-                  <p className="mt-1 text-4xl font-medium text-gray-900 text-center">{stuffs[id]["title"]}</p>
-                  </div>
-                  <a className = "btn" href = "/art">←</a>
-                  </div>
-              </div>
+            <div className="isolate bg-white h-screen place-content-center">
+            <div className="artImageContainer mt-[20px]">
+                <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 artImage" />
+            </div>
+            <div className = "grid place-items-center">
+                <div>
+            <h3 className="mt-4 text-xl text-gray-700 text-center">{stuffs[id]["info"]}</h3>
+            <p className="mt-1 text-4xl font-medium text-gray-900 text-center">{stuffs[id]["title"]}</p>
+            </div>
+            <a className = "btn" href = "/art">←</a>
+            </div>
+        </div>
               );
           }
           else {

@@ -32,7 +32,7 @@
   height: 75%;
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   
   
@@ -45,10 +45,63 @@
       object-fit: contain;
       width: auto !important;
       position: relative !important;
+      height: auto !important;
+      border-radius: 10px;
+  }
+}
+
+.artImageContainer {
+  padding: 0px;
+  height: 75%;
+  width: auto;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  
+  
+  & > span {
+      position: unset !important;
+      height: 100%;
+  }
+
+  .artImage {
+      object-fit: contain;
+      width: auto !important;
+      position: relative !important;
       height: 100% !important;
       border-radius: 10px;
   }
 }
+
+.nhsImageContainer {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  
+  
+  & > span {
+      position: unset !important;
+      height: 100%;
+  }
+
+  .nhsImage {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: auto !important;
+      border-radius: 10px;
+  }
+}
+
+hr.thin {
+  height: 2px;
+  border: 0;
+  width: 80%;
+  margin-left:10% !important;
+  }
 
 @layer utilities {
   .focus-ring-small {
