@@ -215,6 +215,17 @@ export default function Clubs() {
             <iframe src="https://youtube.com/embed/rw8njh78SJs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             </div>
+
+            <div>
+            <hr className="my-6 thin bg-gray-400 dark:bg-gray-300"/> 
+            </div>
+
+            <h5 class="mb-[10px] text-xl font-normal tracking-tight text-gray-900 dark:text-white text-center">Ombra Mai Fu</h5>
+            <div className="mt-10 w-screen px-10 max-w-3xl">
+            <div class="aspect-w-16 aspect-h-9 mx-auto video-mask-box">
+            <iframe src="https://youtube.com/embed/40puzs7Kwi4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
             
             <br/>
             <br/>
