@@ -286,7 +286,7 @@ void loop() {
               <div className="isolate bg-white h-screen place-content-center justify-center items-center">
                 <div class="grid grid-cols-2 gap-4 p-8 min-h justify-center items-center">
                   <div className="imageContainer">
-                      <Image src="/screenshots/smartCushion.jpg" layout="fill" className="h-full object-center group-hover:opacity-75 image shadow-2xl" />
+                      <Image src="/screenshots/smartCushion.JPG" layout="fill" className="h-full object-center group-hover:opacity-75 image shadow-2xl" />
                   </div>
                   <div className="max-h-[70vh] overflow-y-auto overflow-x-auto border-2">
                   <pre><code class="language-python">{code}</code></pre>
