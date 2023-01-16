@@ -24,7 +24,7 @@ export default function Clubs() {
             <li>2022 STEM Summer Camp, 2022</li>
             <li>Raising awareness about trash and recycling, 2022</li>
             <li>Community Garden, 2022</li>
-            <li>Created wchool-wide book club, 2022</li>
+            <li>Created school-wide book club, 2022</li>
             </ul>
             <b className='text-lg underline'>Click to view some photos of our chapter!</b>
             </a>
