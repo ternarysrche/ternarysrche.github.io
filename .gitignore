@@ -1,2 +1,7 @@
 node_modules
 .next
+pages
+!pages/index.js
+!pages/404.js
+!pages/_app.js
+public
