@@ -18,7 +18,7 @@ export default function Home() {
               I'm currently a senior at BASIS Independent Fremont. Explore my website to learn more about me!
             </p> */}
             <p className="text-lg pt-4 text-center">
-            This website is currently under construction — exciting developments coming soon!
+            This website is currently under construction — exciting developments coming soon!!
             </p>
       </div>
     </div>
