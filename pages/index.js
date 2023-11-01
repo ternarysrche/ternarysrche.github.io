@@ -6,20 +6,20 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="isolate bg-white">
+    <div className="isolate h-screen overflow:hidden bg-gradient-to-tr from-indigo-100 to-white dark:from-[#1e1b4b] dark:to-black">
       <div className = "z-40 absolute top-0 w-screen items-center">
-      {/* <Navbar /> */}
+      <Navbar />
       </div>
-      <div className="z-0 absolute top-0 w-screen h-screen p-12 flex flex-col items-center justify-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center">
+      <div className="z-10 absolute top-0 w-screen h-screen p-12 flex flex-col items-center justify-center">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center dark:text-gray-200 duration-200">
               Hi, I'm Christopher Chen
             </h1>
-            {/* <p className="text-lg pt-4 text-center">
-              I'm currently a senior at BASIS Independent Fremont. Explore my website to learn more about me!
-            </p> */}
-            <p className="text-lg pt-4 text-center">
-            This website is currently under construction — exciting developments coming soon!!
+            <p className="text-lg pt-4 text-center dark:text-gray-200 duration-200">
+              I'm a high school senior excited to create for the future.
             </p>
+            {/* <p className="text-lg pt-4 text-center">
+            This website is currently under construction — exciting developments coming soon!!
+            </p> */}
       </div>
     </div>
   );

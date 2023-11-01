@@ -9,21 +9,42 @@
   font-size: 2em;
   font-weight: bold;
   border-radius: 50%;
-  background-color: white;
-  color: black;
   text-align: center;
   cursor: pointer;
 }
 
+.btn-black {
+  height: 80px;
+  line-height: 80px;  
+  width: 80px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+.icon-black {
+  color: black;
+}
+
 .video-mask{
   /* padding: 20px; */
-  margin-top: 20px;
-  border-radius: 10px; 
-  overflow: hidden; 
+  height:auto;
+  position:absolute;
+  width: 50%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  overflow: hidden;
 }
 .video-mask-box{
   /* padding: 20px; */
-  border-radius: 10px; 
+  border-radius: 8px; 
   overflow: hidden; 
 }
 
@@ -52,12 +73,15 @@
 
 .artImageContainer {
   padding: 0px;
-  height: 75%;
-  width: auto;
+  height:auto;
+  position:absolute;
+  width: 50%;
+  padding-left: 30px;
   display: flex;
   justify-content: center;  
   align-items: center;
-  
+  top: 50%;
+  transform: translateY(-50%);
   
   & > span {
       position: unset !important;
@@ -112,9 +136,9 @@ hr.thin {
   }
 }
 
-@layer base {
+/* @layer base {
   :root {
-   @apply bg-white dark:bg-black;
+   @apply duration-600;
   }
- }
+ } */
 
