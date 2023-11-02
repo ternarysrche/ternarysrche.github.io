@@ -76,7 +76,7 @@ export default function Art() {
             <Link href="/art/destination.mov" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/destination.mov" />
+                <source src="/images/destination_thumb.mov" />
               </video>
                 </a></Link>
             </div>
@@ -101,7 +101,7 @@ export default function Art() {
             <Link href="/art/donanobis.mp4" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/donanobis.mp4" />
+                <source src="/images/donanobis_thumb.mov" />
               </video>
                 </a></Link>
             </div>
@@ -137,7 +137,7 @@ export default function Art() {
             <Link href="/art/babies.mp4" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                  <source src="/images/babies.mp4" />
+                  <source src="/images/babies_thumb.mov" />
                 </video>
             </a></Link>
             </div>
@@ -167,7 +167,7 @@ export default function Art() {
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
 
             {/* <video autoPlay muted loop style={{ width: '800px', height: 'auto'}} > */}
-                  <source src="/images/sanitizedCommunication.mp4" />
+                  <source src="/images/sanitizedCommunication_thumb.mov" />
                 </video>
             </a></Link>
             </div>
@@ -187,7 +187,7 @@ export default function Art() {
             <Link href="/art/revealed.mov" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/revealed.mov" />
+                <source src="/images/revealed_thumb.mov" />
               </video>
                 </a></Link>
             </div>
@@ -199,7 +199,7 @@ export default function Art() {
             <Link href="/art/mankinds.mov" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/mankinds.mov" />
+                <source src="/images/mankinds_thumb.mov" />
               </video>
                 </a></Link>
             </div>

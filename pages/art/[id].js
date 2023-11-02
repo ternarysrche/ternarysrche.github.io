@@ -80,11 +80,6 @@ const stuffs = {
     "info": "Harmonies in Garageband",
     "text": `Our perceptions of foreign cultures and peoples are largely shaped by the stories we consume. In many, if not most, classrooms around the world, European literature is held in high regard, thoroughly explored and studiously dissected. Yet, the European perspective is only one of the many, diverse lenses through which we can observe and understand the world. In her TED Talk, “The dangers of a single story”, Chimamanda Ngozi Adichie warns of the critical misunderstandings that arise from consuming narratives from a single perspective. By reading literature written by individuals of different cultural backgrounds, we can get a more complete, genuine view of humanity.\n\n I recorded 13 variations of the piece, “Dona Nobis Pacem,” and layered them together in GarageBand. Each track, a melody a little different from the rest, uniquely contributes to the overall ethereal harmony. Vocal harmonies serve as a beautiful representation of the importance of considering diverse literary perspectives.`
   },
-  "donanobis.mp4": {
-    "title": "Voices",
-    "info": "Harmonies in Garageband",
-    "text": `Our perceptions of foreign cultures and peoples are largely shaped by the stories we consume. In many, if not most, classrooms around the world, European literature is held in high regard, thoroughly explored and studiously dissected. Yet, the European perspective is only one of the many, diverse lenses through which we can observe and understand the world. In her TED Talk, “The dangers of a single story”, Chimamanda Ngozi Adichie warns of the critical misunderstandings that arise from consuming narratives from a single perspective. By reading literature written by individuals of different cultural backgrounds, we can get a more complete, genuine view of humanity.\n\n I recorded 13 variations of the piece, “Dona Nobis Pacem,” and layered them together in GarageBand. Each track, a melody a little different from the rest, uniquely contributes to the overall ethereal harmony. Vocal harmonies serve as a beautiful representation of the importance of considering diverse literary perspectives.`
-  },
   "installationBeacon.jpg": {
     "title": "Installation Beacon",
     "info": "Mason Jars, Fallen Tree",
