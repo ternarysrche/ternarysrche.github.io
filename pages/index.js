@@ -17,9 +17,7 @@ export default function Home() {
             <p className="text-lg pt-4 text-center dark:text-gray-200 duration-200">
               I'm a high school senior excited to create for the future.
             </p>
-            {/* <p className="text-lg pt-4 text-center">
-            This website is currently under construction — exciting developments coming soon!!
-            </p> */}
+            
       </div>
     </div>
   );
