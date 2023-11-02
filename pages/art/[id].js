@@ -119,14 +119,16 @@ export default function Art() {
             <div className="isolate">
               <ThemeSwitcher />
             <div className="artImageContainer">
-                <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 artImage max-h-[90vh]" />
+                <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 artImage max-h-[80vh]" />
             </div>
             <div className = "absolute right-[30px] h-screen content-center pl-20 w-[50%] grid place-items-center align-middle">
             <h1 className="mt text-4xl font-medium text-gray-900 text-center dark:text-white">{stuffs[id]["title"]}</h1>
             <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">{stuffs[id]["info"]}</h3>
             <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
             <a className = "btn" href = "/art">←</a>
+            
             </div>
+            <div className = "absolute bottom-4 text-lg w-screen italic font-light text-center text-gray-500">(Large images may take a while to load)</div>
         </div>
               );
           }
@@ -145,6 +147,7 @@ export default function Art() {
                   <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
                   <a className = "btn" href = "/art">←</a>
                   </div>
+                  <div className = "absolute bottom-4 text-lg w-screen italic font-light text-center text-gray-500">(Videos take a while to load)</div>
               </div>
             )
           }
