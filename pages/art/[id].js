@@ -70,7 +70,7 @@ const stuffs = {
     "info": "Numeric LED Display, Baby Doll",
     "text": "In 1980, China instated the One-Child policy, seeking to control the then explosive population growth. Yet as the new century rolled around, young adults without siblings found themselves the sole caretakers of both their parents without any other systems of support. Already overburdened by responsibility, much of the new generation opted to not bear children, rapidly decreasing child birth rates. However, this curbed population growth soon proved unsustainable as the new generation could not meet the labor demands of the rapidly growing Chinese economy. Due to this unintended consequence, China has completely reversed its policy on childbirth, incentivizing families to have more children rather than imposing a ban. The baby dolls in this piece exemplify the irony of decades of birth restrictions followed by the scramble to maintain a sufficient workforce for the next generation."
   },
-  "revealed.mp4": {
+  "revealed.mov": {
     "title": "Revealed",
     "info": "Under a Skylight",
     "text": "Everyone has to some degree internalized the expectations set upon them, whether it’s expectations from their parents, peers, society, or social media. We let these expectations, many of which are unreasonable, crowd our mind space and consume our happiness and energy. At one point, we must clear the clutter, recognizing what expectations are reasonable and helpful and wiping away everything else. But life is an ever-going cycle, and those unreasonable, draining expectations may soon come pouring back in. This video was shot from inside my home under our skylight."

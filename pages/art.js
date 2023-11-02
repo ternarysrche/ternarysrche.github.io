@@ -184,10 +184,10 @@ export default function Art() {
 
 
             <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/revealed.mp4" legacyBehavior> 
+            <Link href="/art/revealed.mov" legacyBehavior> 
             <a>
             <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/revealed.mp4" />
+                <source src="/images/revealed.mov" />
               </video>
                 </a></Link>
             </div>
