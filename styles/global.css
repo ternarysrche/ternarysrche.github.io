@@ -41,6 +41,7 @@
   transform: translateY(-50%);
   border-radius: 8px;
   overflow: hidden;
+  background-color: gray;
 }
 .video-mask-box{
   /* padding: 20px; */
