@@ -3,14 +3,14 @@ import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Navbar from "../components/Navbar";
-import hillsideMecca from "../public/images/hillsideMecca.jpg"
-import tsunamiBlades from "../public/images/tsunamiBlades.jpg"
-import visionLost from "../public/images/visionLost.jpg"
+import hillsideMecca from "../public/images/hillsideMecca_thumb.jpeg"
+import tsunamiBlades from "../public/images/tsunamiBlades_thumb.jpg"
+import visionLost from "../public/images/visionLost_thumb.jpeg"
 import whitewashed from "../public/images/whitewashed.jpg"
-import parched from "../public/images/parched.jpg"
-import monteCristo from "../public/images/monteCristo.jpg"
+import parched from "../public/images/parched_thumb.jpeg"
+import monteCristo from "../public/images/monteCristo_thumb.jpeg"
 import kettle from "../public/images/kettle.jpg"
-import objectsFromLife from "../public/images/objectsFromLife.jpg"
+import objectsFromLife from "../public/images/objectsFromLife_thumb.jpeg"
 import installationBeacon from "../public/images/installationBeacon.jpg"
 import Link from "next/link"
 
