@@ -43,6 +43,22 @@
   overflow: hidden;
   background-color: gray;
 }
+
+.video-mask-vert{
+  /* padding: 20px; */
+  height:80%;
+  position:absolute;
+  width: auto;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: gray;
+}
+
 .video-mask-box{
   /* padding: 20px; */
   border-radius: 8px; 

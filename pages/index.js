@@ -15,7 +15,7 @@ export default function Home() {
               Hi, I'm Christopher Chen
             </h1>
             <p className="text-lg pt-4 text-center dark:text-gray-200 duration-200">
-              I'm a high school senior excited to create for the future.
+              I'm a college student excited to create for the future.
             </p>
             
       </div>

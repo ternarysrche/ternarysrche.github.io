@@ -20,6 +20,11 @@ import { ThemeSwitcher } from "../../components/ThemeSwitcher";
 // }
 
 const stuffs = {
+  "avalog.png": {
+        "title": "Avalog",
+        "info": "Sticker Design — printed in bulk on matte vinyl",
+        "text": "A typgography design for a sticker used to advertise for the MIT Logarhythms Fall Concert — Avalog (based off of Avatar - The Last Airbender)."
+    },
     "tsunamiBlades.jpg": {
         "title": "Tsunami Blades",
         "info": "Xacto Blades, Goblet, Altered Shadow",
@@ -45,11 +50,6 @@ const stuffs = {
     "info": "Sunlight Deprived Grass",
     "text": "In the midst of a record-breaking drought, California’s flora and fauna have been stolen of their most vital resource. As global warming continues to worsen, wildfires, droughts, hurricanes, floods, and other natural disasters will only become more and more prevalent. I sought to express through emulation the dire manner with which we are affecting the natural world around us through pollution and exploitation. Over the course of a month, I watered our yellowed grass around my cardboard stencil spelling out “H2O.” This piece exemplifies our parched earth’s desperate need for water as well as the Earth’s desperate need for human conservation and protection."
   },
-  "monteCristo.jpg": {
-    "title": "Monte Cristo Bust",
-    "info": "Charcoal",
-    "text":""
-  },
   "sanitizedCommunication.mp4": {
     "title": "Sanitized Communication",
     "info": "Starbucks Coffee Cups, Sensors, LED",
@@ -60,30 +60,10 @@ const stuffs = {
   //   "info": "Charcoal",
   //   "text": ""
   // },
-  "objectsFromLife.jpg": {
-    "title": "Objects from Life",
-    "info": "Charcoal & Graphite",
-    "text": ""
-  },
-  "babies.mp4": {
-    "title": "Fertility Crisis",
-    "info": "Numeric LED Display, Baby Doll",
-    "text": "In 1980, China instated the One-Child policy, seeking to control the then explosive population growth. Yet as the new century rolled around, young adults without siblings found themselves the sole caretakers of both their parents without any other systems of support. Already overburdened by responsibility, much of the new generation opted to not bear children, rapidly decreasing child birth rates. However, this curbed population growth soon proved unsustainable as the new generation could not meet the labor demands of the rapidly growing Chinese economy. Due to this unintended consequence, China has completely reversed its policy on childbirth, incentivizing families to have more children rather than imposing a ban. The baby dolls in this piece exemplify the irony of decades of birth restrictions followed by the scramble to maintain a sufficient workforce for the next generation."
-  },
   "revealed.mov": {
     "title": "Revealed",
     "info": "Under a Skylight",
     "text": "Everyone has to some degree internalized the expectations set upon them, whether it’s expectations from their parents, peers, society, or social media. We let these expectations, many of which are unreasonable, crowd our mind space and consume our happiness and energy. At one point, we must clear the clutter, recognizing what expectations are reasonable and helpful and wiping away everything else. But life is an ever-going cycle, and those unreasonable, draining expectations may soon come pouring back in. This video was shot from inside my home under our skylight."
-  },
-  "donanobis.mp4": {
-    "title": "Voices",
-    "info": "Harmonies in Garageband",
-    "text": `Our perceptions of foreign cultures and peoples are largely shaped by the stories we consume. In many, if not most, classrooms around the world, European literature is held in high regard, thoroughly explored and studiously dissected. Yet, the European perspective is only one of the many, diverse lenses through which we can observe and understand the world. In her TED Talk, “The dangers of a single story”, Chimamanda Ngozi Adichie warns of the critical misunderstandings that arise from consuming narratives from a single perspective. By reading literature written by individuals of different cultural backgrounds, we can get a more complete, genuine view of humanity.\n\n I recorded 13 variations of the piece, “Dona Nobis Pacem,” and layered them together in GarageBand. Each track, a melody a little different from the rest, uniquely contributes to the overall ethereal harmony. Vocal harmonies serve as a beautiful representation of the importance of considering diverse literary perspectives.`
-  },
-  "installationBeacon.jpg": {
-    "title": "Installation Beacon",
-    "info": "Mason Jars, Fallen Tree",
-    "text": "Trees — they’re humble beings, silently shading our streets and weaving the air we breathe. Deforestation and pollution are slowly tearing away at the habitats that sustain human development. Clean air and comfortable weather may soon be relics of the past. I lined up mason jars, an airtight vessel often used for preservation, atop a fallen tree, emphasizing the preciousness of the air that we too often take for granted. Who knows, perhaps one day the air inside these sealed mason jars could be worth more than gold."
   },
   "destination.mov": {
     "title": "Destination Devastation",
@@ -94,6 +74,11 @@ const stuffs = {
     "title": "Mankind's Future Past",
     "info": "Computer Monitors on the Beach",
     "text": "Over the past few decades, technology has advanced at a never-before-seen pace. Like a snake shedding skin, the general public has quickly abandoned so many of the once state-of-the-art technologies — floppy disks, pagers, cassette-tapes, VHS tapes, the list goes on. Playing on the largest monitor is a scene from “2001: A Space Odyssey,” where prehistoric humans crowd around a black monolith — a symbol of rapid human evolutionary development. As technological advancement continues to accelerate, we can only guess what our world will look like tomorrow. Even the personal computers and laptops that have become so ubiquitous in our world today may soon be an artifact of the past. (Shortly after I took this shot, a large wave whisked away three of the four monitors, leaving only the largest monitor in the sand.)"
+  },
+  "leavinghome.mp4": {
+    "title": "Leaving Home",
+    "info": "Shadows Cast on Magnolia Leaves",
+    "text": "Parents constantly seek to nurture, guide, protect, and communicate with their children. Yet, as kids slowly grow and mature, they often show signs of rebellion, detachment, independence, and lack of communication. Often, parents are faced with one-word verbal responses, unanswered phone calls, and unread text messages. The two colors of the magnolia leaf signify this dichotomy — the caring, nurturing green, and the unresponsive, dry orange. Yet ultimately, no matter how different the colors, they are still two parts bound together on a single leaf — much like how parents and children are bound together by unspoken love and appreciation."
   }
 }
 
@@ -113,39 +98,66 @@ export default function Art() {
         var file = '';
         file = '/images/' + id
         console.log(file)
-        if (file.slice(-3) == 'jpg') {
+        if (file.slice(-3) == 'jpg' || file.slice(-3) == 'png') {
           return (
             
             <div className="isolate">
               <ThemeSwitcher />
+            <div className = "static h-screen pb-20 pt-24 flex">
+              <div className = "w-1/2">
             <div className="artImageContainer">
                 <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 artImage max-h-[80vh]" />
             </div>
-            <div className = "absolute right-[30px] h-screen content-center pl-20 w-[50%] grid place-items-center align-middle">
+            </div>
+            <div className = "w-1/2 h-full content-center px-24 w-[50%] grid place-items-center align-middle">
             <h1 className="mt text-4xl font-medium text-gray-900 text-center dark:text-white">{stuffs[id]["title"]}</h1>
             <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">{stuffs[id]["info"]}</h3>
             <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
-            <a className = "btn" href = "/art">←</a>
+            <a className = "btn" href = "/design">←</a>
             
+            </div>
             </div>
             <div className = "absolute bottom-4 text-lg w-screen italic font-light text-center text-gray-500">(Large images may take a while to load)</div>
         </div>
               );
           }
+          else if (id != "leavinghome.mp4") {
+            return (
+              <div className="isolate">
+                  <ThemeSwitcher />
+                  <div className = "static h-screen pb-20 pt-24 flex">
+                    <div className = "ml-10 w-1/2">
+                    <video autoPlay loop style={{ width: '50%', height: 'auto'}} className = "video-mask">
+                      <source src={file} />
+                    </video>
+                    </div>
+                    <div className = "w-1/2 h-full content-center px-24 w-[50%] grid place-items-center align-middle">
+                    <h1 className="text-4xl font-medium text-gray-900 text-center dark:text-white">{stuffs[id]["title"]}</h1>
+                    <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">{stuffs[id]["info"]}</h3>
+                    <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
+                    <a className = "btn" href = "/design">←</a>
+                    </div>
+                  </div>
+                  <div className = "absolute bottom-4 text-lg w-screen italic font-light text-center text-gray-500">(Videos take a while to load)</div>
+              </div>
+            )
+          }
           else {
             return (
               <div className="isolate">
                   <ThemeSwitcher />
-                  <div className = "ml-10">
-                  <video autoPlay loop style={{ width: '50%', height: 'auto'}} className = "video-mask">
+                  <div className = "static h-screen pb-20 pt-24 flex">
+                    <div className = "ml-10 w-1/2">
+                  <video autoPlay loop style={{ width: '30%', height: 'auto', maxHeight: "80vh", left: "17%"}} className = "video-mask-vert">
                     <source src={file} />
-                  </video>
-                  </div>
-                  <div className = "absolute right-[30px] h-screen content-center pl-32 w-[50%] grid place-items-center align-middle">
-                  <h1 className="mt text-4xl font-medium text-gray-900 text-center dark:text-white">{stuffs[id]["title"]}</h1>
-                  <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">{stuffs[id]["info"]}</h3>
-                  <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
-                  <a className = "btn" href = "/art">←</a>
+                    </video>
+                    </div>
+                    <div className = "w-1/2 h-full content-center px-24 w-[50%] grid place-items-center align-middle">
+                    <h1 className="text-4xl font-medium text-gray-900 text-center dark:text-white">{stuffs[id]["title"]}</h1>
+                    <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">{stuffs[id]["info"]}</h3>
+                    <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-scroll leading-[1.4rem]">{stuffs[id]["text"]}</p>
+                    <a className = "btn" href = "/design">←</a>
+                    </div>
                   </div>
                   <div className = "absolute bottom-4 text-lg w-screen italic font-light text-center text-gray-500">(Videos take a while to load)</div>
               </div>

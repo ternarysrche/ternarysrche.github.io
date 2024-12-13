@@ -6,10 +6,10 @@ import { ThemeSwitcher } from './ThemeSwitcher.js'
 const navigation = [
   { name: 'Home', href: '/', lighthover: "text-sky-700", darkhover: "text-sky-400"},
   // { name: 'About Me', href: '/about' },
-  { name: 'Art', href: '/art', lighthover: "text-sky-700", darkhover: "text-sky-400"},
-  { name: 'Coding', href: '/coding', lighthover: "text-sky-700", darkhover: "text-sky-400"},
-  { name: 'Clubs', href: '/clubs', lighthover: "text-sky-700", darkhover: "text-sky-400"},
-  { name: 'Music', href: '/music', lighthover: "text-sky-700", darkhover: "text-sky-400"}
+  { name: 'Design', href: '/design', lighthover: "text-sky-700", darkhover: "text-sky-400"},
+  //{ name: 'Coding', href: '/coding', lighthover: "text-sky-700", darkhover: "text-sky-400"},
+  //{ name: 'Clubs', href: '/clubs', lighthover: "text-sky-700", darkhover: "text-sky-400"},
+  //{ name: 'Music', href: '/music', lighthover: "text-sky-700", darkhover: "text-sky-400"}
 ]
 
 
