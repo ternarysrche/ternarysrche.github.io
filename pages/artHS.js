@@ -6,11 +6,11 @@ import Navbar from "../components/Navbar";
 import hillsideMecca from "../public/images/hillsideMecca_thumb.jpeg"
 import tsunamiBlades from "../public/images/tsunamiBlades_thumb.jpg"
 import visionLost from "../public/images/visionLost_thumb.jpeg"
-import whitewashed from "../public/images/whitewashed.jpg"
+// import whitewashed from "../public/images/whitewashed.jpg"
 import parched from "../public/images/parched_thumb.jpeg"
 import monteCristo from "../public/images/monteCristo_thumb.jpeg"
-import kettle from "../public/images/kettle.jpg"
-import objectsFromLife from "../public/images/objectsFromLife_thumb.jpeg"
+// import kettle from "../public/images/kettle.jpg"
+// import objectsFromLife from "../public/images/objectsFromLife_thumb.jpeg"
 import installationBeacon from "../public/images/installationBeacon.jpg"
 import Link from "next/link"
 
@@ -174,12 +174,12 @@ export default function Art() {
 
 
 
-            <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+            {/* <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
             <Link href="/art/objectsFromLife.jpg" legacyBehavior> 
             <a>
             <Image src={objectsFromLife} alt="Object From Life" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
             </a></Link>
-            </div>
+            </div> */}
 
 
 

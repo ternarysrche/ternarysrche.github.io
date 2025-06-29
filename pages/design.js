@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { CldImage, CldVideoPlayer } from 'next-cloudinary';
 
 import Navbar from "../components/Navbar";
-import monteCristo from "../public/images/monteCristo_thumb.jpeg"
-import installationBeacon from "../public/images/installationBeacon_thumb.jpeg"
 import Link from "next/link"
 
 // import { getSortedPostsData } from '../lib/posts';
