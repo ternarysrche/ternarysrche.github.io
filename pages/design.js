@@ -1,18 +1,11 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
+import { CldImage, CldVideoPlayer } from 'next-cloudinary';
+
 import Navbar from "../components/Navbar";
-import hillsideMecca from "../public/images/hillsideMecca_thumb.jpeg"
-import tsunamiBlades from "../public/images/tsunamiBlades_thumb.jpg"
-import visionLost from "../public/images/visionLost_thumb.jpeg"
-import whitewashed from "../public/images/whitewashed.jpg"
-import parched from "../public/images/parched_thumb.jpeg"
-import avalog from "../public/images/avalog.png"
 import monteCristo from "../public/images/monteCristo_thumb.jpeg"
-import kettle from "../public/images/kettle.jpg"
-import objectsFromLife from "../public/images/objectsFromLife_thumb.jpeg"
-import installationBeacon from "../public/images/installationBeacon.jpg"
+import installationBeacon from "../public/images/installationBeacon_thumb.jpeg"
 import Link from "next/link"
 
 // import { getSortedPostsData } from '../lib/posts';
@@ -28,149 +21,237 @@ import Link from "next/link"
 // }
 export default function Art() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="isolate bg-gradient-to-tr from-indigo-50 to-white dark:from-[#1e1b4b] dark:to-black">
       <Navbar />
-      {/* <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
-  <div class="h-min w-full bg-red-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/700x400/?subway" alt="subway" />
-  </div>
-  <div class="h-min w-full bg-blue-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/?city" alt="city" />
-  </div>
-  <div class="h-min w-full bg-orange-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/700x300/?fruit" alt="fruit" />
-  </div>
-  <div class="h-min w-full bg-green-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/700x500/?forest" alt="forest" />
-  </div>
-  <div class="h-min w-full bg-yellow-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/?sunset" alt="sunset" />
-  </div>
-  <div class="h-min w-full bg-lime-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/?desert" alt="desert" />
-  </div>
-  <div class="h-min w-full bg-fuchsia-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/700x250/?ocean" alt="ocean" />
-  </div>
-  <div class="h-min w-full bg-teal-400">
-    <img class="object-cover" src="https://source.unsplash.com/random/700x300/?clouds" alt="clouds" />
-  </div>
-</div> */}
-<div className="">
-  <h1 className="text-6xl font-bold text-center py-10">Design</h1> 
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        
-        <h2 className="sr-only">Design Portfolio</h2>
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
-          
-            <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/destination.mov" legacyBehavior> 
-            <a>
-            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/destination_thumb.mov" />
-              </video>
-                </a></Link>
-            </div>
+      <div className="">
+        <h1 className="text-6xl font-bold text-center py-10">Design</h1>
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h2 className="sr-only">Design Portfolio</h2>
+              <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
+
+                {/* ## DESTINATION DEVASTATION */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/destination.mov" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="400"
+                        height="225"
+                        src="destination_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75"
+                      />
+                    </a>
+                  </Link>
+                </div>
+
+                {/* ## TSUNAMI BLADES */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/tsunamiBlades.jpg" legacyBehavior> 
+                    <a>
+                      <CldImage
+                        src="tsunamiBlades_thumb"
+                        className="hover:opacity-75"
+                        width="600"
+                        height="800"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a> 
+                  </Link>
+                </div>
+
+                {/* ## HILLSIDE MECCA */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/hillsideMecca.jpg" legacyBehavior> 
+                    <a >
+                      <CldImage
+                        src="hillsideMecca_thumb"
+                        className="hover:opacity-75"
+                        width="600"
+                        height="450"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+
+                {/* ## VISION LOST */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/visionLost.jpg" legacyBehavior> 
+                    <a>
+                      <CldImage
+                        src="visionLost_thumb"
+                        className="hover:opacity-75"
+                        width="600"
+                        height="338"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a>
+                  </Link>
+                </div>
 
 
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/tsunamiBlades.jpg" legacyBehavior> 
-            <a>
-            <Image src={tsunamiBlades} alt="Tsunami Blades" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-            </a> 
-            </Link>
-          </div>
+                {/* ## PARCHED */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/parched.jpg" legacyBehavior> 
+                    <a>
+                      <CldImage
+                        src="parched_thumb"
+                        className="hover:opacity-75"
+                        width="600"
+                        height="450"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a>
+                  </Link>
+                </div>
 
+                {/* ## AVALOG */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 flex items-stretch">
+                  <Link href="/art/avalog.png" legacyBehavior> 
+                    <a className="w-full h-full block">
+                      <CldImage
+                        src="avalog_full"
+                        className="hover:opacity-75 object-cover w-full h-full"
+                        width="387"
+                        height="640"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                        style={{ width: '100%', height: '100%' }}
+                      />
+                    </a>
+                  </Link>
+                </div>
 
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-          <Link href="/art/hillsideMecca.jpg" legacyBehavior> 
-            <a>
-            <Image src={hillsideMecca} alt="Hillside Mecca" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-          </a></Link>
-          </div>
+                {/* ## SANITIZED COMMUNICATION */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/sanitizedCommunication.mp4" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="400"
+                        height="225"
+                        src="sanitizedCommunication_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75"
+                      />
+                    </a>
+                  </Link>
+                </div>
 
+                {/* ## REVEALED */}
+                <div className="w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/revealed.mov" legacyBehavior>
+                    <a>
+                      <CldVideoPlayer
+                        width="400"
+                        height="225"
+                        src="revealed_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75"
+                      />
+                    </a>
+                  </Link>
+                </div>
 
+                {/* ## MONTE CRISTO */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/monteCristo.jpg" legacyBehavior> 
+                    <a>
+                      <CldImage
+                        src="monteCristo_thumb"
+                        className="hover:opacity-75"
+                        width="600"
+                        height="735"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a>
+                  </Link>
+                </div>
 
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-          <Link href="/art/visionLost.jpg" legacyBehavior> 
-            <a>
-            <Image src={visionLost} alt="Vision Lost" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-          </a></Link>
-          </div>
+                {/* ## MANKIND'S FUTURE PAST */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/mankinds.mov" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="640"
+                        height="428"
+                        src="mankinds_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75"
+                      />
+                    </a>
+                  </Link>
+                </div>
 
+                {/* ## LEAVING HOME */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/leavinghome.mp4" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="720"
+                        height="1280"
+                        src="leavinghome_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75"
+                      />
+                    </a>
+                  </Link>
+                </div>
 
-
-          {/* <a href="/art/parched.jpg" className="group w-full h-min"> */}
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-          <Link href="/art/parched.jpg" legacyBehavior> 
-            <a>
-              <Image src={parched} alt="Parched" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-            </a></Link>
-            </div>
-
-
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-          <Link href="/art/avalog.png" legacyBehavior> 
-            <a>
-              <Image src={avalog} alt="Avalog Sticker Design" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-            </a></Link>
-            </div>
-
-          <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/sanitizedCommunication.mp4" legacyBehavior> 
-            <a>
-            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-
-            {/* <video autoPlay muted loop style={{ width: '800px', height: 'auto'}} > */}
-                  <source src="/images/sanitizedCommunication_thumb.mov" />
-                </video>
-            </a></Link>
-            </div>
-
-
-
-            <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/revealed.mov" legacyBehavior> 
-            <a>
-            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/revealed_thumb.mov" />
-              </video>
-                </a></Link>
-            </div>
-
-
-
-
-            <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/mankinds.mov" legacyBehavior> 
-            <a>
-            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/mankinds_thumb.mov" />
-              </video>
-                </a></Link>
-            </div>
-
-
-            
-
-            <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/leavinghome.mp4" legacyBehavior> 
-            <a>
-            <video autoplay="autoplay" style={{ width: '800px', height: 'auto'}} className = "video-mask-box hover:opacity-75" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                <source src="/images/leavinghome_thumb.mp4" />
-              </video>
-                </a></Link>
-            </div>
-            
-
-            {/* <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-            <Link href="/art/kettle.jpg" legacyBehavior> 
-            <a>
-            <Image src={kettle} alt="Kettle" placeholder='blur' className="h-full w-full object-cover object-center hover:opacity-75" />
-            </a></Link>
-            </div> */}
+                {/* ## INSTALLATION BEACON */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                  <Link href="/art/installationBeacon.jpg" legacyBehavior> 
+                    <a>
+                      <CldImage
+                        src="installationBeacon_full"
+                        className="hover:opacity-75"
+                        width="1800"
+                        height="900"
+                        crop={{
+                          type: 'auto',
+                          source: true
+                        }}
+                      />
+                    </a>
+                  </Link>
+                </div>
 
         </div>
       </div>
@@ -179,43 +260,3 @@ export default function Art() {
     </div>
   );
 }
-{/* <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section classNameName={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section classNameName={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 classNameName={utilStyles.headingLg}>Blog</h2>
-        <ul classNameName={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li classNameName={utilStyles.listItem} key={id}>
-              <Link legacyBehavior href={`/posts/${id}`}><a>{title}</a></Link>
-              <br />
-              <small classNameName={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section>
-      <html>
-        <head>
-          <script src="https://unpkg.com/konva@8.3.13/konva.min.js"></script>
-          <meta charset="utf-8" />
-          <title>Konva Canvas Scrolling Drag Demo</title>
-        </head>
-
-        <body>
-          <div id="container"></div>
-          
-        </body>
-      </html>
-      </section>
-    </Layout> */}
