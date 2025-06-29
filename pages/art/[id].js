@@ -106,7 +106,7 @@ export default function Art() {
             <div className = "static h-screen pb-20 pt-24 flex">
               <div className = "w-1/2">
             <div className="artImageContainer">
-                <Image src={file} layout="fill" className="h-full w-full object-cover object-center group-hover:opacity-75 artImage max-h-[80vh]" />
+                <Image src={file} fill className="h-full w-full object-cover object-center group-hover:opacity-75 artImage max-h-[80vh]" priority={true} quality={75} />
             </div>
             </div>
             <div className = "w-1/2 h-full content-center px-24 w-[50%] grid place-items-center align-middle">
@@ -121,13 +121,13 @@ export default function Art() {
         </div>
               );
           }
-          else if (id != "leavinghome.mp4") {
+          else if (id != "leavinghome.mp4") { // VERTICAL VIDEOS
             return (
               <div className="isolate">
                   <ThemeSwitcher />
                   <div className = "static h-screen pb-20 pt-24 flex">
                     <div className = "ml-10 w-1/2">
-                    <video autoPlay loop style={{ width: '50%', height: 'auto'}} className = "video-mask">
+                    <video loading="lazy" autoPlay loop style={{ width: '50%', height: 'auto'}} className = "video-mask">
                       <source src={file} />
                     </video>
                     </div>
