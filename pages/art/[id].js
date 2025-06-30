@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { useRouter } from 'next/router';
 import { useEffect } from 'react'
 import { ThemeSwitcher } from "../../components/ThemeSwitcher";
@@ -190,15 +189,14 @@ export default function Art() {
                   }}
                 >
                   <CldVideoPlayer
-                  src={name + "_full"}
-                  className="block rounded-[10px] w-full h-full"
                   width={stuffs[id]["width"]}
                   height={stuffs[id]["height"]}
+                  src={name + "_full"}
                   loop={true}
                   playsinline={true}
                   autoplay={true}
                   controls={false}
-                  alt={name}
+                  className="block rounded-[10px] w-full h-full"
                   />
                 </div>
                 </div>
