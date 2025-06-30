@@ -29,7 +29,7 @@ export default function Art() {
               <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 p-8">
 
                 {/* ## DESTINATION DEVASTATION */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/destination.mov" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
@@ -41,8 +41,12 @@ export default function Art() {
                         playsinline={true}
                         autoplay={true}
                         controls={false}
-                        className="hover:opacity-75"
-                        style={{ pointerEvents: 'none' }}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                      />
+                      <button
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
                       />
                     </a>
                   </Link>
@@ -141,7 +145,7 @@ export default function Art() {
                 </div>
 
                 {/* ## SANITIZED COMMUNICATION */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/sanitizedCommunication.mp4" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
@@ -153,53 +157,60 @@ export default function Art() {
                         playsinline={true}
                         autoplay={true}
                         controls={false}
-                        className="hover:opacity-75"
-                        style={{ pointerEvents: 'none' }}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                      />
+                      <button
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
                       />
                     </a>
                   </Link>
                 </div>
 
                 {/* ## REVEALED */}
-                <div className="w-full overflow-hidden rounded-lg bg-gray-200">
+                <div className="w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/revealed.mov" legacyBehavior>
-                    <a>
-                      <CldVideoPlayer
-                        width="640"
-                        height="361"
-                        src="revealed_thumb"
-                        loop={true}
-                        muted={true}
-                        playsinline={true}
-                        autoplay={true}
-                        controls={false}
-                        className="hover:opacity-75"
-                        style={{ pointerEvents: 'none' }}
-                      />
-                    </a>
+                  <a>
+                    <CldVideoPlayer
+                      width="640"
+                      height="361"
+                      src="revealed_thumb"
+                      loop={true}
+                      muted={true}
+                      playsinline={true}
+                      autoplay={true}
+                      controls={false}
+                      className="hover:opacity-75 cursor-pointer pointer-events-none"
+                    />
+                    <button
+                      className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                      style={{ zIndex: 10 }}
+                      tabIndex={-1}
+                    />
+                  </a>
                   </Link>
                 </div>
+                        
+                        <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                          <Link href="/art/monteCristo.jpg" legacyBehavior> 
+                          <a>
+                            <CldImage
+                            src="monteCristo_thumb"
+                            className="hover:opacity-75"
+                            width="600"
+                            height="735"
+                            crop={{
+                              type: 'auto',
+                              source: true
+                            }}
+                            />
+                          </a>
+                          </Link>
+                        </div>
 
-                {/* ## MONTE CRISTO */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-                  <Link href="/art/monteCristo.jpg" legacyBehavior> 
-                    <a>
-                      <CldImage
-                        src="monteCristo_thumb"
-                        className="hover:opacity-75"
-                        width="600"
-                        height="735"
-                        crop={{
-                          type: 'auto',
-                          source: true
-                        }}
-                      />
-                    </a>
-                  </Link>
-                </div>
-
-                {/* ## MANKIND'S FUTURE PAST */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                        {/* ## MANKIND'S FUTURE PAST */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/mankinds.mov" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
@@ -211,15 +222,19 @@ export default function Art() {
                         playsinline={true}
                         autoplay={true}
                         controls={false}
-                        className="hover:opacity-75"
-                        style={{ pointerEvents: 'none' }}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                      />
+                      <button
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
                       />
                     </a>
                   </Link>
                 </div>
 
                 {/* ## LEAVING HOME */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/leavinghome.mp4" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
@@ -231,8 +246,12 @@ export default function Art() {
                         playsinline={true}
                         autoplay={true}
                         controls={false}
-                        className="hover:opacity-75"
-                        style={{ pointerEvents: 'none' }}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                      />
+                      <button
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
                       />
                     </a>
                   </Link>
