@@ -42,6 +42,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75"
+                        style={{ pointerEvents: 'none' }}
                       />
                     </a>
                   </Link>
@@ -153,6 +154,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75"
+                        style={{ pointerEvents: 'none' }}
                       />
                     </a>
                   </Link>
@@ -172,6 +174,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75"
+                        style={{ pointerEvents: 'none' }}
                       />
                     </a>
                   </Link>
@@ -209,6 +212,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75"
+                        style={{ pointerEvents: 'none' }}
                       />
                     </a>
                   </Link>
@@ -228,6 +232,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75"
+                        style={{ pointerEvents: 'none' }}
                       />
                     </a>
                   </Link>
