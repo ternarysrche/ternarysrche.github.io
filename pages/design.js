@@ -34,7 +34,7 @@ export default function Art() {
                     <a>
                       <CldVideoPlayer
                         width="640"
-                        height="428"
+                        height="361"
                         src="destination_thumb"
                         loop={true}
                         muted={true}
@@ -145,7 +145,7 @@ export default function Art() {
                     <a>
                       <CldVideoPlayer
                         width="640"
-                        height="360"
+                        height="361"
                         src="sanitizedCommunication_thumb"
                         loop={true}
                         muted={true}
@@ -164,7 +164,7 @@ export default function Art() {
                     <a>
                       <CldVideoPlayer
                         width="640"
-                        height="360"
+                        height="361"
                         src="revealed_thumb"
                         loop={true}
                         muted={true}
@@ -201,7 +201,7 @@ export default function Art() {
                     <a>
                       <CldVideoPlayer
                         width="640"
-                        height="428"
+                        height="429"
                         src="mankinds_thumb"
                         loop={true}
                         muted={true}
