@@ -41,6 +41,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="destination"
                       />
                       <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
@@ -157,6 +158,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="sanitizedCommunication"
                       />
                       <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
@@ -181,6 +183,7 @@ export default function Art() {
                       autoplay={true}
                       controls={false}
                       className="hover:opacity-75 cursor-pointer pointer-events-none"
+                      id="revealed"
                     />
                     <span
                       className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
@@ -222,6 +225,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="mankinds"
                       />
                       <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
@@ -246,6 +250,7 @@ export default function Art() {
                         autoplay={true}
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="leavinghome"
                       />
                       <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"

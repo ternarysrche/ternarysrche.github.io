@@ -125,7 +125,7 @@ export default function Art() {
     //     return null;
     // }
     // else {
-        const { isReady } = useRouter();
+    const { isReady } = useRouter();
 
    if (!isReady) {
        return null; // Or any loading component
@@ -194,8 +194,13 @@ export default function Art() {
                   src={name + "_full"}
                   loop={true}
                   playsinline={true}
-                  autoplay={true}
-                  controls={false}
+                  muted={false}
+                  controls={true}
+                  colors={{
+                    accent: '#ffffff',
+                    base: '#000000',
+                    text: '#ffffff',
+                  }}
                   className="block rounded-[10px] w-full h-full"
                   />
                 </div>
