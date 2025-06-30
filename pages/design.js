@@ -33,8 +33,8 @@ export default function Art() {
                   <Link href="/art/destination.mov" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
-                        width="400"
-                        height="225"
+                        width="640"
+                        height="428"
                         src="destination_thumb"
                         loop={true}
                         muted={true}
@@ -144,8 +144,8 @@ export default function Art() {
                   <Link href="/art/sanitizedCommunication.mp4" legacyBehavior> 
                     <a>
                       <CldVideoPlayer
-                        width="400"
-                        height="225"
+                        width="640"
+                        height="360"
                         src="sanitizedCommunication_thumb"
                         loop={true}
                         muted={true}
@@ -163,8 +163,8 @@ export default function Art() {
                   <Link href="/art/revealed.mov" legacyBehavior>
                     <a>
                       <CldVideoPlayer
-                        width="400"
-                        height="225"
+                        width="640"
+                        height="360"
                         src="revealed_thumb"
                         loop={true}
                         muted={true}
@@ -238,7 +238,7 @@ export default function Art() {
                   <Link href="/art/installationBeacon.jpg" legacyBehavior> 
                     <a>
                       <CldImage
-                        src="installationBeacon_full"
+                        src="installationBeacon_thumb"
                         className="hover:opacity-75"
                         width="1800"
                         height="900"
