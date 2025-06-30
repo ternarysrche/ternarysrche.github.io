@@ -184,33 +184,35 @@ export default function Art() {
               <div className="relative min-h-screen pb-20 pt-24 flex flex-col md:flex-row overflow-auto">
                 <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-0">
                 <div
-                  className="relative w-[80vw] md:w-[40vw]"
+                  className="relative w-full max-w-[80vw] md:max-w-[40vw]"
                   style={{
                   aspectRatio: `${stuffs[id]["width"]} / ${stuffs[id]["height"]}`,
                   }}
                 >
                   <CldVideoPlayer
                   src={name + "_full"}
-                  className="block rounded-[10px] object-contain w-full h-full"
+                  className="block rounded-[10px] w-full h-full"
                   width={stuffs[id]["width"]}
                   height={stuffs[id]["height"]}
                   loop={true}
                   playsinline={true}
                   autoplay={true}
                   controls={false}
-                  priority={true}
                   alt={name}
                   />
                 </div>
                 </div>
-                <div className="w-full md:w-1/2 h-full md:h-[80vh] md:items-center md:justify-center content-center px-10 md:px-24 grid place-items-center align-middle mt-8 md:mt-0">
+                <div className="w-full md:w-1/2 h-auto md:h-[80vh] flex flex-col items-center justify-center px-10 md:px-24 mt-8 md:mt-0">
                 <h1 className="mt text-4xl font-medium text-gray-900 text-center dark:text-white">
                   {stuffs[id]["title"]}
                 </h1>
                 <h3 className="mt-1 text-xl text-gray-700 text-center dark:text-gray-400">
                   {stuffs[id]["info"]}
                 </h3>
-                <p className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 max-h-80 overflow-auto leading-[1.4rem]">
+                <p
+                  className="tracking-tight mt-5 text-gray-700 text-center dark:text-gray-300 overflow-auto leading-[1.4rem]"
+                  style={{ minHeight: "100px" }}
+                >
                   {stuffs[id]["text"]}
                 </p>
                 <a className="btn" href="/design">

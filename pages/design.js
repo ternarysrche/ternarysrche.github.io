@@ -43,7 +43,7 @@ export default function Art() {
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
                       />
-                      <button
+                      <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
                         style={{ zIndex: 10 }}
                         tabIndex={-1}
@@ -159,7 +159,7 @@ export default function Art() {
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
                       />
-                      <button
+                      <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
                         style={{ zIndex: 10 }}
                         tabIndex={-1}
@@ -183,7 +183,7 @@ export default function Art() {
                       controls={false}
                       className="hover:opacity-75 cursor-pointer pointer-events-none"
                     />
-                    <button
+                    <span
                       className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
                       style={{ zIndex: 10 }}
                       tabIndex={-1}
@@ -192,24 +192,24 @@ export default function Art() {
                   </Link>
                 </div>
                         
-                        <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
-                          <Link href="/art/monteCristo.jpg" legacyBehavior> 
-                          <a>
-                            <CldImage
-                            src="monteCristo_thumb"
-                            className="hover:opacity-75"
-                            width="600"
-                            height="735"
-                            crop={{
-                              type: 'auto',
-                              source: true
-                            }}
-                            />
-                          </a>
-                          </Link>
-                        </div>
+              <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
+                <Link href="/art/monteCristo.jpg" legacyBehavior> 
+                <a>
+                  <CldImage
+                  src="monteCristo_thumb"
+                  className="hover:opacity-75"
+                  width="600"
+                  height="735"
+                  crop={{
+                    type: 'auto',
+                    source: true
+                  }}
+                  />
+                </a>
+                </Link>
+              </div>
 
-                        {/* ## MANKIND'S FUTURE PAST */}
+              {/* ## MANKIND'S FUTURE PAST */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/mankinds.mov" legacyBehavior> 
                     <a>
@@ -224,7 +224,7 @@ export default function Art() {
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
                       />
-                      <button
+                      <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
                         style={{ zIndex: 10 }}
                         tabIndex={-1}
@@ -248,7 +248,7 @@ export default function Art() {
                         controls={false}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
                       />
-                      <button
+                      <span
                         className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
                         style={{ zIndex: 10 }}
                         tabIndex={-1}
