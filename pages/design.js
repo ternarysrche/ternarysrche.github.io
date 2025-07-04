@@ -70,6 +70,30 @@ export default function Art() {
                   </Link>
                 </div>
 
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
+                  <Link href="/art/msts.mp4" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="640"
+                        height="481"
+                        src="msts_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="msts"
+                      />
+                      <span
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
+                      />
+                    </a>
+                  </Link>
+                </div>
+
                 {/* ## HILLSIDE MECCA */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
                   <Link href="/art/hillsideMecca.jpg" legacyBehavior> 

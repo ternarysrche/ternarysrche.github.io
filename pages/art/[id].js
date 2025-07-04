@@ -28,6 +28,13 @@ const stuffs = {
         "width": 1161,
         "height": 1920
     },
+    "msts.mp4": {
+      "title": "MIT Motorsports on Times Square",
+      "info": "Video Advertisement",
+      "text": "Created a short ad for the MIT Motorsports team, displayed on the Nasdaq Tower in Times Square.",
+      "width": 640,
+      "height": 480
+    },
     "tsunamiBlades.jpg": {
         "title": "Tsunami Blades",
         "info": "Xacto Blades, Goblet, Altered Shadow",
