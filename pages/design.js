@@ -317,7 +317,7 @@ export default function Art() {
                     <a>
                       <CldVideoPlayer
                         width="360"
-                        height="640"
+                        height="250"
                         src="tahoe_thumb"
                         loop={true}
                         muted={true}

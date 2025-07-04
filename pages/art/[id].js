@@ -40,7 +40,7 @@ const stuffs = {
         "info": "Video",
         "text": "A short video of a trip to Lake Tahoe, California.",
         "width": 720,
-        "height": 1280
+        "height": 590
     },
     "tsunamiBlades.jpg": {
         "title": "Tsunami Blades",
