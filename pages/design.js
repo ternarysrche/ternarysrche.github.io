@@ -40,6 +40,7 @@ export default function Art() {
                         playsinline={true}
                         autoplay={true}
                         controls={false}
+                        priority={true}
                         className="hover:opacity-75 cursor-pointer pointer-events-none"
                         id="destination"
                       />
@@ -70,6 +71,7 @@ export default function Art() {
                   </Link>
                 </div>
 
+                {/* ## MIT MOTORSPORTS ON TIMES SQUARE */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
                   <Link href="/art/msts.mp4" legacyBehavior> 
                     <a>
@@ -94,6 +96,8 @@ export default function Art() {
                   </Link>
                 </div>
 
+
+
                 {/* ## HILLSIDE MECCA */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
                   <Link href="/art/hillsideMecca.jpg" legacyBehavior> 
@@ -111,6 +115,33 @@ export default function Art() {
                     </a>
                   </Link>
                 </div>
+
+
+                {/* ## LEAVING HOME */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
+                  <Link href="/art/leavinghome.mp4" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="720"
+                        height="1280"
+                        src="leavinghome_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="leavinghome"
+                      />
+                      <span
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
+                      />
+                    </a>
+                  </Link>
+                </div>
+
 
                 {/* ## VISION LOST */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
@@ -260,30 +291,7 @@ export default function Art() {
                   </Link>
                 </div>
 
-                {/* ## LEAVING HOME */}
-                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
-                  <Link href="/art/leavinghome.mp4" legacyBehavior> 
-                    <a>
-                      <CldVideoPlayer
-                        width="720"
-                        height="1280"
-                        src="leavinghome_thumb"
-                        loop={true}
-                        muted={true}
-                        playsinline={true}
-                        autoplay={true}
-                        controls={false}
-                        className="hover:opacity-75 cursor-pointer pointer-events-none"
-                        id="leavinghome"
-                      />
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
-                        style={{ zIndex: 10 }}
-                        tabIndex={-1}
-                      />
-                    </a>
-                  </Link>
-                </div>
+                
 
                 {/* ## INSTALLATION BEACON */}
                 <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200">
@@ -298,6 +306,31 @@ export default function Art() {
                           type: 'auto',
                           source: true
                         }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+
+                {/* ## TAHOE */}
+                <div className="h-min w-full overflow-hidden rounded-lg bg-gray-200 relative">
+                  <Link href="/art/tahoe.mp4" legacyBehavior> 
+                    <a>
+                      <CldVideoPlayer
+                        width="360"
+                        height="640"
+                        src="tahoe_thumb"
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        autoplay={true}
+                        controls={false}
+                        className="hover:opacity-75 cursor-pointer pointer-events-none"
+                        id="tahoe"
+                      />
+                      <span
+                        className="absolute inset-0 w-full h-full bg-white opacity-0 hover:opacity-25 cursor-pointer"
+                        style={{ zIndex: 10 }}
+                        tabIndex={-1}
                       />
                     </a>
                   </Link>

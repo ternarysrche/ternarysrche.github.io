@@ -35,6 +35,13 @@ const stuffs = {
       "width": 640,
       "height": 480
     },
+    "tahoe.mp4": {
+        "title": "Tahoe",
+        "info": "Video",
+        "text": "A short video of a trip to Lake Tahoe, California.",
+        "width": 720,
+        "height": 1280
+    },
     "tsunamiBlades.jpg": {
         "title": "Tsunami Blades",
         "info": "Xacto Blades, Goblet, Altered Shadow",
